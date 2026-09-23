@@ -4,13 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flyers Flight Paths · ProLOWD</title>
-<meta name="description" content="Where every Dayton Flyer comes from: an interactive map of Flyers men's basketball players' hometowns, by @ProLOWD.">
+<meta name="description" content="Where every Dayton Flyer comes from: 599 players mapped from hometown to UD Arena, 1903–04 through 2026–27. Built by @ProLOWD.">
 <meta property="og:title" content="Flyers Flight Paths · ProLOWD">
-<meta property="og:description" content="Where every Dayton Flyer comes from: an interactive map of Flyers men's basketball players' hometowns, by @ProLOWD.">
+<meta property="og:description" content="Where every Dayton Flyer comes from: 599 players mapped from hometown to UD Arena, 1903–04 through 2026–27. Built by @ProLOWD.">
 <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
+<meta property="og:url" content="https://prolowd.github.io/flight-paths/">
+<meta property="og:site_name" content="ProLOWD">
+<meta property="og:image" content="https://prolowd.github.io/flight-paths/preview.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="840">
+<meta property="og:image:alt" content="Map of the United States with red flight paths arcing from Flyers' hometowns to UD Arena in Dayton.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Map of the United States with red flight paths arcing from Flyers' hometowns to UD Arena in Dayton.">
+<meta name="twitter:image" content="https://prolowd.github.io/flight-paths/preview.jpg">
 <meta name="twitter:site" content="@ProLOWD">
 <meta name="twitter:creator" content="@ProLOWD">
+<link rel="canonical" href="https://prolowd.github.io/flight-paths/">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -112,8 +121,8 @@
   .player-row.active .rank{color:#fff;}
   .empty-note{padding:18px;font-size:12px;line-height:1.6;color:var(--muted);}
   .popup-total{font-size:11.5px;color:var(--gold);margin:2px 0 4px;}
-  .legend-score{display:none;}
-  body.scoring .legend-score{display:flex;}
+  .legend-row.legend-score{display:none;}
+  body.scoring .legend-row.legend-score{display:flex;}
   .era-num{text-transform:none;}
   .era-bar{display:flex;gap:6px;margin-top:10px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;}
   .era-bar::-webkit-scrollbar{display:none;}
